@@ -12,6 +12,8 @@
 		682814712216C495004E4A3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6828146F2216C495004E4A3F /* Main.storyboard */; };
 		682814732216C497004E4A3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 682814722216C497004E4A3F /* Assets.xcassets */; };
 		682814762216C497004E4A3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 682814742216C497004E4A3F /* LaunchScreen.storyboard */; };
+		6828147F2217023B004E4A3F /* Concetration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6828147E2217023B004E4A3F /* Concetration.swift */; };
+		6828148122170352004E4A3F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6828148022170352004E4A3F /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		682814722216C497004E4A3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		682814752216C497004E4A3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		682814772216C497004E4A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6828147E2217023B004E4A3F /* Concetration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concetration.swift; sourceTree = "<group>"; };
+		6828148022170352004E4A3F /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		6828146A2216C495004E4A3F /* Concetration */ = {
 			isa = PBXGroup;
 			children = (
+				6828147E2217023B004E4A3F /* Concetration.swift */,
+				6828148022170352004E4A3F /* Card.swift */,
 				6828147D2216C89D004E4A3F /* Supporting Files */,
 				6828146D2216C495004E4A3F /* ViewController.swift */,
 				6828146F2216C495004E4A3F /* Main.storyboard */,
@@ -144,7 +150,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6828146E2216C495004E4A3F /* ViewController.swift in Sources */,
+				6828147F2217023B004E4A3F /* Concetration.swift in Sources */,
 				6828146C2216C495004E4A3F /* AppDelegate.swift in Sources */,
+				6828148122170352004E4A3F /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

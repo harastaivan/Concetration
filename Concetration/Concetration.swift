@@ -9,9 +9,28 @@
 import Foundation
 
 class Concetration {
-    var cards = [Card]()
+    private(set) var cards = [Card]()
 
-    var indexOfOneAndOnlyCardFaceUp: Int?
+    private var indexOfOneAndOnlyCardFaceUp: Int? {
+        get {
+            var foundIndex: Int? // = nil
+            for index in cards.indices {
+                if cards[index].isFaceUp {
+                    if foundIndex == nil {
+                        foundIndex = index
+                    } else {
+                        return nil
+                    }
+                }
+            }
+            return foundIndex
+        }
+        set {
+            for index in cards.indices {
+                cards[index].isFaceUp = (index == newValue)
+            }
+        }
+    }
 
     func chooseCard(at index: Int) {
         if !cards[index].isMatched {
@@ -22,13 +41,8 @@ class Concetration {
                     cards[index].isMatched = true
                 }
                 cards[index].isFaceUp = true
-                indexOfOneAndOnlyCardFaceUp = nil
             } else {
                 // either no cards or 2 are face up
-                for flipDownIndex in cards.indices {
-                    cards[flipDownIndex].isFaceUp = false
-                }
-                cards[index].isFaceUp = true
                 indexOfOneAndOnlyCardFaceUp = index
             }
         }
@@ -40,6 +54,6 @@ class Concetration {
             cards.append(card)
             cards.append(card)
         }
-        // TODO: Shuffle the cards
+        cards.shuffle()
     }
 }

@@ -6,7 +6,7 @@ Stanford - Developing iOS 11 Apps with Swift Course
 ## Completed
 
 - [x] Stanford - Developing iOS Apps with Swift 1
-- [ ] Stanford - Developing iOS Apps with Swift 2
+- [x] Stanford - Developing iOS Apps with Swift 2
 - [ ] Stanford - Developing iOS Apps with Swift 3
 - [ ] Stanford - Developing iOS Apps with Swift 4
 - [ ] Stanford - Developing iOS Apps with Swift 5

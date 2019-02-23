@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Concetration {
+struct Concetration {
     private(set) var cards = [Card]()
 
     private var indexOfOneAndOnlyCardFaceUp: Int? {
@@ -32,7 +32,7 @@ class Concetration {
         }
     }
 
-    func chooseCard(at index: Int) {
+    mutating func chooseCard(at index: Int) {
         assert(cards.indices.contains(index), "Concetration.chooseCard(at: \(index)): chosen index not in the cards")
         if !cards[index].isMatched {
             if let matchIndex = indexOfOneAndOnlyCardFaceUp, matchIndex != index {

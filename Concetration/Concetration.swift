@@ -37,7 +37,7 @@ struct Concetration {
         if !cards[index].isMatched {
             if let matchIndex = indexOfOneAndOnlyCardFaceUp, matchIndex != index {
                 // check if cards match
-                if cards[matchIndex].identifier == cards[index].identifier {
+                if cards[matchIndex] == cards[index] {
                     cards[matchIndex].isMatched = true
                     cards[index].isMatched = true
                 }
